@@ -20,7 +20,7 @@ def download_video():
         'outtmpl': output_file,
         'merge_output_format': 'mp4',
         'quiet': True,
-        # 'cookiefile': 'youtube_cookies.txt',  # Optional: ensure file exists
+        'cookiefile': 'youtube_cookies.txt',  # Optional: ensure file exists
     }
 
     try:
