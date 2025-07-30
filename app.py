@@ -39,5 +39,9 @@ def download_video():
         if os.path.exists(output_file):
             os.remove(output_file)
 
+@app.get("/")
+def hello():
+    return "hello"
+
 if __name__ == "__main__":
     app.run(debug=True)
