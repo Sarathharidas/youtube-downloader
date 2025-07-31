@@ -20,7 +20,7 @@ def download_video():
         'outtmpl': output_file,
         'merge_output_format': 'mp4',
         'quiet': True,
-        'cookiefile': 'youtube_cookies.txt',  # Optional: ensure file exists
+         'cookiefile': 'youtube_cookies.txt',  # Optional: ensure file exists
     }
 
     try:
@@ -38,10 +38,6 @@ def download_video():
     finally:
         if os.path.exists(output_file):
             os.remove(output_file)
-
-@app.get("/")
-def hello():
-    return "hello"
 
 if __name__ == "__main__":
     app.run(debug=True)
